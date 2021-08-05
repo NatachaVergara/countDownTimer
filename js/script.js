@@ -29,7 +29,21 @@ function generarEvento(){
         document.querySelector("#minuto").innerText = Math.floor((cuentaRegresiva % hora) / minuto);
 
         document.querySelector("#segundo").innerText = Math.floor((cuentaRegresiva % minuto) / segundo);
-    })
+
+
+        if(cuentaRegresiva < 0){
+            h3.innerHTML = "!Ha llegado el día!";
+            let contador = document.querySelector(".contador");
+            
+            contador.style.display = "none"
+        }
+
+    });
+
+    
+
+
+
     
 };
 
