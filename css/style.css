@@ -1,0 +1,104 @@
+*{margin:0;padding:0;box-sizing: content-box;}
+
+body{
+    font-family: 'Source Code Pro', monospace;
+    background-image: url("https://i.pinimg.com/736x/14/42/04/144204bbc9b0963dddf3efb5e8b62162.jpg");
+    background-repeat: no-repeat;
+    background-size:100%;
+    
+    
+}
+.container{
+    width: 90%;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 25px;
+    
+}
+.container h1{
+    margin: 50px;
+}
+h1, h3{text-align: center;}
+
+input{
+    margin-left: 5px;
+}
+
+#evento{
+    max-width: 290px;
+    padding: 5px
+}
+#fecha{
+    width: 130px;
+}
+button{
+    width: 100px;
+    padding: 5px;
+    margin: 25px;
+    align-self: center;
+
+}
+
+
+
+
+
+/*Comienzo del contador*/
+.container h3{
+    margin:50px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    list-style-type: none;
+}
+
+li span{
+    font-size:3rem;
+
+    display: block;
+}
+
+
+footer{   
+    
+    background-color: black;
+    padding: 20px
+}
+
+
+
+hr{
+    height: 100px;
+    color: black;
+}
+
+.videoEjemplo{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+iframe{
+    max-width: 350px;
+   margin: 20px;
+}
+
+
+footer span{
+    color: aliceblue;
+    margin: auto;
+   
+}
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 1rem;
+    }
+    
+}

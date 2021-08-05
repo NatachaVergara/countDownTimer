@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
+    <!--Css propio-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Crea tu cuenta regresiva </title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Le damos la bienvenida a nuestro sitio donde va a poder crear su propia cuenta regresiva</h1>
+
+        <label for="evento">Ingrese el nombre de su evento </label>
+        <input type="text" name="evento" id="evento"><br>
+        <label for="fecha">Ingrese la fecha del evento</label>
+        <input type="datetime-local" name="fecha" id="fecha">
+
+        <button type="submit" id="comenzar">Comenzar cuenta regresiva</button>
+    </div>
+    <div class="container">
+        <h3>Su evento comenzará en</h3>
+        <ul class="contador">
+            <li><span id="dia"></span> Días</li>
+            <li><span id="hora"></span> Horas</li>
+            <li><span id="minuto"></span> Minutos</li>
+            <li><span id="segundo"></span> Segundos</li>
+        </ul>
+
+    </div>
+    <hr>
+    <div class="videoEjemplo">
+        <h3>Video fuente del código</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4k71G0tPJnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+<footer>
+    <span>Creado por Natacha Vergara</span>
+</footer>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
