@@ -30,7 +30,7 @@ function generarEvento() {
 
 
         if (cuentaRegresiva < 0) {
-            h3.innerHTML = "!Ha llegado el día!";
+            h3.innerHTML = "¡Ha llegado el día!";
             let contador = document.querySelector(".contador");
             contador.style.display = "none"
         };
