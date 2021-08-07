@@ -59,7 +59,7 @@ function initApp() {
 
         h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`;
 
-        //Inicializador del contador
+
         generarEvento();
 
     });

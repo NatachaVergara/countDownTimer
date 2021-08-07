@@ -40,9 +40,31 @@ button{
     align-self: center;
     border-radius: 10px;
     background-color:rgb(127, 150, 255);
+    align-self: start;
 
 }
+.btnIcone{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+}
 
+/*Seccion invitacion*/
+.invitaciones{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.invitaciones h4{
+    margin: 10px;
+    padding: 10px;
+}
+
+input{
+    width: 250px;
+    margin: 10px;
+}
 
 
 
@@ -101,6 +123,9 @@ footer span{
 @media screen and (max-width: 500px){
     h1{
         font-size: 1rem;
+    }
+    button{
+        align-self: center;
     }
     
 }
