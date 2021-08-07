@@ -4,10 +4,10 @@ body{
     font-family: 'Source Code Pro', monospace;
     background-image: url("https://i.pinimg.com/736x/14/42/04/144204bbc9b0963dddf3efb5e8b62162.jpg");
     background-repeat: no-repeat;
-    background-size:100%;
-    
+    background-size:100%;   
     
 }
+
 .container{
     width: 90%;
     margin:auto;
@@ -80,7 +80,7 @@ hr{
     height: 100px;
     color: black;
 }
-
+/*Segunda parte de la pagina*/
 .videoEjemplo{
     display: flex;
     flex-direction: column;
