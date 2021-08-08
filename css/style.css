@@ -49,8 +49,10 @@ button{
     justify-content: center;
 }
 
+
 /*Seccion invitacion*/
 .invitaciones{
+    
     display: flex;
     flex-direction:column;
     justify-content: center;
