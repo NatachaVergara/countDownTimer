@@ -51,13 +51,16 @@ button{
 
 
 /*Seccion invitacion*/
+
 .invitaciones{
     
     display: flex;
     flex-direction:column;
     justify-content: center;
 }
-
+.invitaciones{
+    display: none;
+}
 .invitaciones h4{
     margin: 10px;
     padding: 10px;
