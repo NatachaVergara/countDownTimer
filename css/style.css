@@ -109,28 +109,59 @@ hr{
 }
 /*Segunda parte de la pagina*/
 .videoEjemplo{
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    margin: auto;    
     justify-content:center;
     align-items: center;
 }
-iframe{
-    max-width: 350px;
-   margin: 20px;
+.videoHijo{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
+
+
+iframe{
+    max-width: 550px;
+    margin: 20px;
+}
 
 footer span{
     color: aliceblue;
     margin: auto;
    
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 450px){
     h1{
         font-size: 1rem;
     }
     button{
         align-self: center;
     }
+    iframe{
+        width: 300px;
+        margin: 0px;
+        align-self: center;
+    }
+  .videoHijo span{
+      font-size: 1.6rem;
+      align-self: center;
+  }  
+  
     
+}
+@media screen and (max-width:767px){
+    .videoEjemplo{
+        flex-direction: column;
+        justify-content:center;
+        
+    }
+    
+
+
+
 }
