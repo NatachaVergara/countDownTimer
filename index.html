@@ -10,13 +10,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,600&display=swap" rel="stylesheet">
     <!--Font Awsome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Css propio-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/modal.css">
     <title>Crea tu cuenta regresiva </title>
 </head>
 
 <body>
+    <!--Seccion del modal-->
+    <div class="modalBody">
+        <div id="miModal" class="modal">
+            <div class="contModal">
+                <div class="modalHeader">
+                    <!--header del modal-->
+                    <span class="cerrar">&times;</span>
+                    <h2>Aviso</h2>
+                </div>
+                <!--fin header del modal-->
+                <div class="cuerpoModal">
+                    <!--Cuerpo del modal-->
+                    <p>Por favor, no deje los campos vacíos.</p>
+                </div>
+                
+            </div>
+            <!--Fin "ContModal"-->
+        </div>
+        <!--Fin de "modal"-->
+    </div>
+    <!--Fin del modal-->
+
+
+
+
+
+
+
     <div class="container">
         <h1>Le damos la bienvenida a nuestro sitio donde va a poder crear su propia cuenta regresiva</h1>
 
@@ -29,18 +60,18 @@
             <button type="submit" id="comenzar">Comenzar cuenta regresiva</button>
             <i class="fas fa-share-alt"> Compartir evento(proximamente)</i>
         </div>
-    
+
 
 
         <div class="invitaciones">
-            <h4> Crear lista de invitados (proximamente)</h4>   
-            <label for="nombreInvitado">Nombre del invitado: </label> 
+            <h4> Crear lista de invitados (proximamente)</h4>
+            <label for="nombreInvitado">Nombre del invitado: </label>
             <input type="text" name="nombreInvitado" id="nombreInvidado">
-            <label for="email">Email del invitado: </label>  
+            <label for="email">Email del invitado: </label>
             <input type="email" name="email" id="email">
         </div>
     </div>
-    
+
     <div class="container ">
         <h3>Su evento comenzará en</h3>
         <ul class="contador">
@@ -51,17 +82,21 @@
         </ul>
 
     </div>
-    
+
     <hr>
     <div class="videoEjemplo">
         <h3>Video de donde base mi código</h3>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4k71G0tPJnA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4k71G0tPJnA" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
     </div>
-<footer>
-    <span>Creado por Natacha Vergara</span>
-</footer>
+    <footer>
+        <span>Creado por Natacha Vergara</span>
+    </footer>
 
     <script src="./js/script.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

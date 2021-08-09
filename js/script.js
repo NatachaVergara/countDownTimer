@@ -36,27 +36,10 @@ function generarEvento() {
 };
 
 
-//Creo una funcion para validar que los campos esten siempre completos
-function validarCampos() {
-    let eventoInput = document.querySelector("#evento");
-    let fechaInput = document.querySelector("#fecha");
-
-    if (eventoInput.value.length == 0 || fechaInput.value.length == 0) {
-        alert("No deje campos vacíos");
-        setTimeout(() => {
-            location.reload()
-        }, 1)
-    }
-}
-
-
 
 function initApp() {
     //genero el click inicial
     btnComenzar.addEventListener("click", () => {
-        //evento por si se llega a dejar campos vacios.
-        validarCampos()
-
         h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`;
 
 
