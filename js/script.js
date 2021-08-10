@@ -36,13 +36,16 @@ function generarEvento() {
 };
 
 
+localStorage.setItem("eventoGenerado", cuentaRegresiva);
+let mostrarEvento = localStorage.getItem("eventoGenerado");
+console.log(mostrarEvento);
+
+
 
 function initApp() {
     //genero el click inicial
     btnComenzar.addEventListener("click", () => {
         h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`;
-
-
         generarEvento();
 
     });
@@ -50,3 +53,4 @@ function initApp() {
 
 //Inicializador de la app
 initApp();
+
