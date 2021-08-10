@@ -36,9 +36,6 @@ function generarEvento() {
 };
 
 
-localStorage.setItem("eventoGenerado", cuentaRegresiva);
-let mostrarEvento = localStorage.getItem("eventoGenerado");
-console.log(mostrarEvento);
 
 
 
