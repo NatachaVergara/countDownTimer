@@ -34,11 +34,6 @@ function generarEvento() {
     });
 
 };
-
-
-
-
-
 function initApp() {
     //genero el click inicial
     btnComenzar.addEventListener("click", () => {
@@ -47,7 +42,8 @@ function initApp() {
 
     });
 }
+initApp()
 
-//Inicializador de la app
-initApp();
 
+
+ 
