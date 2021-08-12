@@ -33,44 +33,45 @@ function generarEvento() {
 
         }
 
-        // let obj = {
-        //     "name": document.querySelector("#evento").value,
-        //     "date": fechaEvento,
-        //     "nombreEvento" : h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`,
+        
 
-        // };
+        let obj = {
+            "name": document.querySelector("#evento").value,
+            "date": fechaEvento,
+            "nombreEvento" : h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`,
 
-        // localStorage.setItem("stored", JSON.stringify(obj));
+        };
+
+        localStorage.setItem("stored", JSON.stringify(obj));
+        
     })
 
 };
 
-function initApp() {
-    
+function initApp() {   
     //genero el click inicial
     btnComenzar.addEventListener("click", () => {
         h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`;
         generarEvento();
 
-    });   
+    });       
+
+    let obj = JSON.parse(localStorage.getItem("stored"));
+    if (obj) {
+        document.querySelector("#evento").value = obj.name;
+        document.querySelector("#fecha").value = obj.date;
+        h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en: `;
+        generarEvento();
+    }
+
     
 
-    // let obj = JSON.parse(localStorage.getItem("stored"));
-    // if (obj) {
-    //     document.querySelector("#evento").value = obj.name;
-    //     document.querySelector("#fecha").value = obj.date;
-    //     h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en: `;
-    //     generarEvento();
-    // }
+    // //Boton para borrar el evento y que se refresque la pantalla
+    // btnBorrar.addEventListener("click", () => {
+    //     localStorage.clear();
+    //     location.reload();
 
-    
-
-    //Boton para borrar el evento y que se refresque la pantalla
-    btnBorrar.addEventListener("click", () => {
-        localStorage.removeItem("stored");
-        location.reload();
-
-    })
+    // })
     
 
 }
