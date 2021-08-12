@@ -30,16 +30,17 @@ function generarEvento() {
             h3.innerHTML = "¡Ha llegado el día!";
             let contador = document.querySelector(".contador");
             contador.style.display = "none";
-
         }
-        let obj = {
-            "name": document.querySelector("#evento").value,
-            "date": fechaEvento,
-            "nombreEvento": h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`,
-            
-        };
 
-        localStorage.setItem("stored", JSON.stringify(obj));
+
+        // let obj = {
+        //     "name": document.querySelector("#evento").value,
+        //     "date": fechaEvento,
+        //     "nombreEvento": h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`,
+            
+        // };
+
+        // localStorage.setItem("stored", JSON.stringify(obj));
 
 
 
@@ -50,7 +51,7 @@ function generarEvento() {
 };
 
 function initApp() {
-
+    localStorage.clear();
     //genero el click inicial
     btnComenzar.addEventListener("click", () => {
         h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`;
@@ -58,14 +59,15 @@ function initApp() {
 
     });
 
-    let obj = JSON.parse(localStorage.getItem("stored"));
-    if (obj) {
-        document.querySelector("#evento").value = obj.name;
-        document.querySelector("#fecha").value = obj.date;
-        h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en: `;
+    // let obj = JSON.parse(localStorage.getItem("stored"));
+    // if (obj) {
 
-        generarEvento();
-    }
+    //     document.querySelector("#evento").value = obj.name;
+    //     document.querySelector("#fecha").value = obj.date;
+    //     h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en: `;       
+    //     generarEvento();
+    // }
+  
 
 
 
