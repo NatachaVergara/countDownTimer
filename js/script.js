@@ -49,6 +49,7 @@ function generarEvento() {
 };
 
 function initApp() {   
+    localStorage.clear();
     //genero el click inicial
     btnComenzar.addEventListener("click", () => {
         h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`;
