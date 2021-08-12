@@ -66,12 +66,12 @@ function initApp() {
 
     
 
-    // //Boton para borrar el evento y que se refresque la pantalla
-    // btnBorrar.addEventListener("click", () => {
-    //     localStorage.clear();
-    //     location.reload();
+    //Boton para borrar el evento y que se refresque la pantalla
+    btnBorrar.addEventListener("click", () => {
+        localStorage.clear();
+        location.reload();
 
-    // })
+    })
     
 
 }
