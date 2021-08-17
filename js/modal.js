@@ -27,6 +27,7 @@ function cerrarModal() {
     cuerpoModal.style.display = "none";
     modal.style.visibility = "hidden";    
     setTimeout(() => {
+        localStorage.clear();
         location.reload()
     }, 1)
 };
@@ -36,6 +37,7 @@ function outsideClick(e) {
         cuerpoModal.style.display = "none";
         modal.style.visibility = "hidden";
         setTimeout(() => {
+            localStorage.clear();
             location.reload()
         }, 1)
     }
