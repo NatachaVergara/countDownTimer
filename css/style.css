@@ -33,6 +33,8 @@ input{
 #fecha{
     width: 130px;
 }
+
+
 button{
     width: 100px;
     padding: 5px;
@@ -151,7 +153,15 @@ footer span{
       font-size: 1.6rem;
       align-self: center;
   }  
-  
+ 
+ 
+  li{
+      margin-left: 15px;
+  }
+  li span{
+      font-size: 2rem;
+      text-align: center;
+  }
     
 }
 @media screen and (max-width:767px){
