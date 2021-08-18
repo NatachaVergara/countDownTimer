@@ -1,0 +1,17 @@
+.modoOscuro{
+    background-image: url("/img/darkClock.jpg");
+    background-repeat: repeat;
+    color: white;
+}
+
+.modoOscuroModal{
+    color:black;
+}
+
+.btnPosition{
+    align-self: flex-end;
+}
+.btnModoOscuro{   
+    background-color: black;
+    color: white;
+}

@@ -21,21 +21,22 @@
     <!--Css propio-->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/modoOscuro.css">
     <title>Crea tu cuenta regresiva </title>
 </head>
 
-<body>
+<body id="body" >
     <!--Seccion del modal-->
-    <div class="modalBody">
+    <div  class="modalBody">
         <div id="miModal" class="modal">
             <div class="contModal">
                 <div class="modalHeader">
                     <!--header del modal-->
-                    <span class="cerrar">&times;</span>
+                    <span class="cerrar ">&times;</span>
                     <h2>Aviso</h2>
                 </div>
                 <!--fin header del modal-->
-                <div class="cuerpoModal">
+                <div id="cueporModal" class="cuerpoModal "> <!--modoOscuroModal-->
                     <!--Cuerpo del modal-->
                     <p>Por favor, no deje los campos vacíos.</p>
                 </div>
@@ -53,8 +54,10 @@
 
 
 
-    <div class="container">
+    <div class="container ">
         <h1>Le damos la bienvenida a nuestro sitio donde va a poder crear su propia cuenta regresiva</h1>
+
+        <button id="btnModo" class="btnPosition ">Modo Noche 🌛</button>
 
         <label for="evento" class="evento">Ingrese el nombre de su evento </label>
         <input type="text" name="evento" id="evento" required><br>
@@ -84,7 +87,7 @@
         </div>
 
         <hr>
-        <div class="container">
+        <div class="container ">
             <h3>Videos desde donde base mi código</h3>
             <div class="videoEjemplo">
 
@@ -97,7 +100,7 @@
                         allowfullscreen></iframe>
                 </div>
 
-                <div class="videoHijo">
+                <div class="videoHijo ">
                     <span>Modal</span>
                     <iframe height="315" src="https://www.youtube.com/embed/6ophW7Ask_0" title="YouTube video player"
                         frameborder="0"
@@ -108,12 +111,13 @@
             </div>
         </div>
         <footer>
-            <span>Creado por Natacha Vergara</span>
+            <span >Creado por Natacha Vergara</span>
         </footer>
 
 
         <script src="./js/script.js"></script>
         <script src="./js/modal.js"></script>
+        <script src="./js/modoOscuro.js"></script>
 </body>
 
 </html>
