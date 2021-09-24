@@ -37,13 +37,14 @@ function generarEvento() {
         }
     });
 
-
+    
 
 
     let obj = {
         "name": document.querySelector("#evento").value,
         "date": fechaEvento,
         "nombreEvento": h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en:`,
+        
 
     };
 
@@ -80,10 +81,14 @@ function initApp() {
         document.querySelector("#fecha").value = obj.date;
         h3.innerHTML = ` Su ${document.querySelector("#evento").value} comenzara en: `;
         generarEvento();
-
     }
-
-
+   
+    let noche = JSON.parse(localStorage.getItem("noche"));
+    if(noche){
+        body.classList.toggle('modoOscuro') = noche.body;
+        modalModoOscuro.classList.toggle('modoOscuroModal') = noche.modal;
+        btnModo.classList.toggle(`btnModoOscuro`) = noche.btModo;
+    }
 
 
     // //Boton para borrar el evento y que se refresque la pantalla
